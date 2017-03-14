@@ -1,0 +1,130 @@
+body {
+	background-color: #748BA7;
+}
+
+.img-rounded{
+	max-width: 400px;
+	max-height: 400px;
+	cursor: pointer;
+}
+
+
+#proj-image{
+	max-width: 400px;
+	max-height: 150px;
+	padding: 2px;
+	border-color: #000000;
+	cursor: pointer;
+}
+
+.proj { 
+	background: #D4AC6A; 
+	text-align: center;
+	border-style: groove;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 15px;
+}
+
+.topic{
+	background: #FFDFAA;
+	border-style: groove;
+	padding-left: 80px;
+	padding-right: 15px;
+	padding-bottom: 15px;
+}
+
+h1, h2{
+	font-style: underline;
+}
+
+#modal-image{
+	
+	max-width: 1300px;
+	max-height: 700px;
+}
+
+#myModal{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	
+	display: table;
+}
+
+#proj-pitch{
+	font-style: italic;
+}
+
+#wrapper {
+	padding-left: 250px;
+	transition: all 0.4s ease 0s;
+}
+
+#sidebar-wrapper {
+	height: 100%;
+	margin-left: -250px;
+	left: 250px;
+	width: 250px;
+	background: #FFDFAA;
+	position: fixed;
+	height: 100%;
+	overflow-y: auto;
+	z-index: 1000;
+	transition: all 0.4s ease 0s;
+}
+
+#page-content-wrapper {
+	height: 100%;
+	width: 100%;
+}
+
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+    height: 100%;
+}
+
+.parallax { 
+    background-image: url("Images/britain.jpg");
+
+	height: 100%;
+	width: 100%;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/**/
+@media (max-width:767px) {
+
+    #wrapper {
+      padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+      left: 0;
+    }
+
+    #wrapper.active {
+      position: relative;
+      left: 250px;
+    }
+
+    #wrapper.active #sidebar-wrapper {
+      left: 250px;
+      width: 250px;
+      transition: all 0.4s ease 0s;
+    }
+
+}
