@@ -43,13 +43,13 @@ f2 = open('index.html','w')
 f2.truncate()
 
 
-fullspan = "<span class='text-muted' id='data'></span>"
-beginspan = "<span class='text-muted' id='data'>"
+fullspan = "<p class='lead' id='data'></p>"
+beginspan = "<p class='lead' id='data'>"
 #fullspan_pos = "<span class='text-muted' id='pos'></span>"
 #beginspan_pos = "<span class='text-muted' id='pos'>"
 #fullspan_neg = "<span class='text-muted' id='neg'></span>"
 #beginspan_neg = "<span class='text-muted' id='neg'>"
-endspan = "</span>"
+endspan = "</p>"
 
 before_text = "<br>Percentage of Positive Tweets Before: " + str(pos_percentage_before) + "% <br> Percentage of Negative Tweets Before: " + str(neg_percentage_before) + "%"
 
