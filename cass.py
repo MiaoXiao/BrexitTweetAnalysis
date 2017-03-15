@@ -57,7 +57,7 @@ after_text = "<br>Percentage of Positive Tweets After: " + str(pos_percentage_af
 
 numb_pos = "<br>Total Positive Tweets Before: " + str(count2) + "<br> Total Negative Tweets Before: " + str(count)
 
-numb_neg = "<br>Total Positive Tweets After: " + str(count3) + "<br> Total Negative Tweets After: " + str(count4)
+numb_neg = "<br>Total Positive Tweets After: " + str(count4) + "<br> Total Negative Tweets After: " + str(count3)
 
 for line in f1:
 	f2.write(line.replace(fullspan, beginspan + numb_pos + numb_neg + before_text + after_text + endspan))
